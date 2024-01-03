@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2196F3"
+        >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="WindWatch"
+            android:textSize="24sp"
+            android:gravity="center"
+
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/historyData"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_history"
+            android:gravity="center"
+            android:layout_marginLeft="200dp"
+            android:paddingBottom="-8dp"/>
+    </LinearLayout>
+
+
+
+
+    <SearchView
+
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:background="@drawable/serchview"
+        android:queryHint="Enter Your City"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:queryBackground="@color/search"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/editTextSearch"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/locationSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextSearch"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:text="MyLocation"
+             />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#2196F3">
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/cityDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"
+            />
+        <TextView
+            android:id="@+id/countryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/currTempDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+    <TextView
+        android:id="@+id/feelsLikeTempDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/maxTempDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/minTempDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/sunriseDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/SunsetDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/windSpeedDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/humidityDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
